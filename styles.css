@@ -10,17 +10,19 @@
     text-align: center;
   }
   
-  .flex-item-left {
+  
+  .flex-item {
     background-color: #f1f1f1;
     padding: 10px;
     flex: 50%;
   }
-  
-  .flex-item-right {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
+
+  .flex-item img {
+    width: 100%;
+    object-fit: cover;
   }
+  
+
   
   /* Responsive layout - makes a one column-layout instead of two-column layout */
   @media (max-width: 800px) {
