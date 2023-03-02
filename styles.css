@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 * {
     box-sizing: border-box;
@@ -30,3 +31,55 @@
       flex-direction: column;
     }
   }
+
+@font-face {
+  font-family: "BestFriend";
+  src: url("fonts/bf.otf");
+  src: url("fonts/bf.ttf") format("ttf"),
+}
+
+body{
+  background-image: linear-gradient(to right, #241b21, #2e162b, #361037, #390a4795, #36055980), url('assets/bg.png') !important;
+  height: 100%;
+  margin:0;
+}
+
+.mainContainer{
+  text-align: center;
+  max-height: 100vh;
+  cursor: pointer;
+}
+
+.title{
+  font-family: 'BestFriend';
+  font-size: 128px;
+  color: #fff;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease-in-out;
+  animation: fade-in 2s ease-in-out forwards;
+
+}
+
+.subTitle{
+  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+  margin-top:95vh;
+  opacity: 0.8;
+  font-size: 12px;
+  color:#fff;
+  text-align: center;
+  left: 50%;
+  -webkit-animation: bounce .4s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  0% {}
+  100% {
+    transform:translateY(-7px);
+  }
+}
