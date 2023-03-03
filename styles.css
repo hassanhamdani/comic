@@ -18,8 +18,9 @@
   }
 
   .flex-item img {
-    width: 100%;
-    object-fit: cover;
+    width: 50%;
+    object-fit: fill;
+    max-width: 1300px;
   }
   
 
@@ -29,4 +30,39 @@
     .flex-container {
       flex-direction: column;
     }
+  }
+   
+
+   html, body, section {
+    block-size: 100%;
+  }
+  
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  section {
+    scroll-snap-align: center;
+    scroll-snap-stop: normal;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  section:nth-of-type(even) {
+    color: white;
+    background: black;
+  }
+  
+  section:nth-of-type(odd) {
+    color: black;
+    background: white;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 4rem;
   }
