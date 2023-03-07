@@ -3,42 +3,40 @@
     <head>
         <title>The USB curse</title>
 		<link rel="stylesheet" href="styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="script.js"></script>
     </head>
   <body>
-      <section>
-        <div class="flex-container">
-            <div class="flex-item">
-                <img src="assets/poster.png" alt="poster">
-            </div>
-          </div>
-      </section>
-      <section>
-        <div class="flex-container">
-            <div class="flex-item">
-                <img src="assets/poster.png" alt="poster">
-            </div>
-          </div>
-      </section>
-      <section>
-        <h1>slide 3</h1>
-      </section>
-      <section>
-        <h1>slide 4</h1>
-      </section>
-      <section>
-        <h1>slide 5</h1>
-      </section>
-      
     <div class="mainContainer" id="mainContainer">
       <h3 class="title" id="title">The</h3>
       <h4 class="subTitle">Click anywhere to advance</h4>
     </div>
-    <div class="flex-container" id="main" style="display:none">
-        <div class="flex-item">
-            <img src="assets/poster.png" alt="poster">
+    <div id="main" style="display:none">
+      <div class="page">
+        <div class="contact-sidebar" style="top:10px">
+          <a href="#" class="open-contact-popup">Abstract</a>
         </div>
+        <div class="contact-popup" style="overflow: hidden;top:10px">
+            <div class="contact-popup-header">
+              <a href="#" class="close-contact-popup">X</a>
+            </div>
+            <div class="contact-popup-body">
+              To be added
+            </div>
+        </div>
+        <div class="page-content">
+          <div class="slides">
+            <section class="slide one"><img src="assets/Frame1.5.png"/></section>
+            <section class="slide two"><img src="assets/Frame2.png"/></section>
+            <section class="slide three"><img src="assets/Frame_3.png"/></section>
+            <section class="slide four"><img src="assets/Frame4.png"/></section>
+            <section class="slide five"><img src="assets/Frame5.png"/></section>
+            <section class="slide six"><img src="assets/Frame6.png"/></section>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src="script.js"></script>
 </body>
 </html>
