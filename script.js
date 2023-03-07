@@ -12,23 +12,23 @@ document.addEventListener('click', () => {
 });
 
 jQuery(document).ready(function ($) {
-    $(".open-contact-popup").click(function () {
-      $(".contact-popup").addClass("open");
+    $(".open-abstract-popup").click(function () {
+      $(".abstract-popup").addClass("open");
     });
   
-    $(".close-contact-popup").click(function () {
-      $(".contact-popup").removeClass("open");
+    $(".close-abstract-popup").click(function () {
+      $(".abstract-popup").removeClass("open");
     });
   });
   
   gsap.registerPlugin(ScrollTrigger);
   
   function initScrollAnimations() {
-    gsap.to(".contact-popup", {
+    gsap.to(".abstract-popup", {
       scrollTrigger: {
         trigger: ".four",
         start: "top center",
-        toggleClass: { targets: ".contact-popup", className: "open" },
+        toggleClass: { targets: ".abstract-popup", className: "open" },
         scrub: true,
         scroller: ".page-content"
       }
