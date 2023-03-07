@@ -87,7 +87,6 @@ body{
   -ms-overflow-style: none;
 }
 
-/* wrapper containing our slides */
 .slides {
   display: flex;
   flex-direction: row;
@@ -151,7 +150,7 @@ body{
   display: block;
 }
 
-.contact-sidebar {
+.abstract-sidebar {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -162,7 +161,7 @@ body{
   z-index: 99;
 }
 
-.contact-sidebar a {
+.abstract-sidebar a {
   line-height: 2.5em;
   color: #FFFFFF;
   position: fixed;
@@ -177,11 +176,11 @@ body{
   text-decoration: none;
 }
 
-.contact-sidebar::hover {
+.abstract-sidebar::hover {
   text-decoration: none !important;
 }
 
-.contact-popup {
+.abstract-popup {
   width: 40vw;
   height: 100vh;
   position: fixed;
@@ -202,25 +201,25 @@ body{
   color: #FFFFFF !important;
 }
 
-.contact-popup.open {
+.abstract-popup.open {
   opacity: 1;
   transform: translateX(0);
   transition: transform 0.6s ease-in;
 }
 
-.contact-popup-header{
+.abstract-popup-header{
     width: 100%;
     text-align: center;
     padding: 2em;
 }
 
-.close-contact-popup{
+.close-abstract-popup{
   color: #FFFFFF !important;
   font-size: 3em;
   text-decoration: none !important;
 }
 
-.contact-popup-body{
+.abstract-popup-body{
     margin-left: 20%;
     margin-right: 20%;
     height: 100vh;
