@@ -42,3 +42,31 @@ jQuery(document).ready(function ($) {
   window.addEventListener("load", function () {
     init();
   });
+
+var myVideo = document.getElementById('videoplay');
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function () {
+if (myVideo.paused) {
+  if (myVideo.requestFullscreen) {
+      myVideo.requestFullscreen();
+  }
+  else if (myVideo.msRequestFullscreen) {
+      myVideo.msRequestFullscreen();
+  }
+  else if (myVideo.mozRequestFullScreen) {
+      myVideo.mozRequestFullScreen();
+  }
+  else if (myVideo.webkitRequestFullScreen) {
+      myVideo.webkitRequestFullScreen();
+  }
+  myVideo.play();
+}
+else {
+  myVideo.pause();
+}
+}, false);
+myVideo.addEventListener('ended',myHandler,false);
+function myHandler(e) {
+  myVideo.webkitExitFullScreen()
+  document.getElementById('seven').scrollIntoView();
+}
