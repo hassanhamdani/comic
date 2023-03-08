@@ -24,12 +24,70 @@
         </div>
         <div class="page-content">
           <div class="slides">
-            <section class="slide one"><img src="assets/Frame1.5.png"/></section>
-            <section class="slide two"><img src="assets/Frame2.png"/></section>
-            <section class="slide three"><img src="assets/Frame_3.png"/></section>
-            <section class="slide four"><img src="assets/Frame4.png"/></section>
-            <section class="slide five"><img src="assets/Frame5.png"/></section>
-            <section class="slide six"><img src="assets/Frame6.png"/></section>
+
+            <section class="slide one">
+              <h4 class ="subTitle2">Click the comic to play sound </br> Scroll down to read the rest </br> View horizontally</h4>
+              <audio id="f1" preload="auto">
+                <source src="assets/Frame1_Audio.wav" type="audio/wav">
+              </audio>
+              <audio id="b1" preload="auto">
+              <source src="music_comic/trailermusic-7621.mp3" type="audio/mp3">
+            </audio>
+            <script>
+              var audio = document.getElementById("b1");
+              audio.volume = 0.2;
+            </script>
+              <img src="assets/Frame1.5.png"  onclick="document.getElementById('f1').play();document.getElementById('b1').play();"/>
+              <img class="speech" src="assets/1.gif" alt="speech bubble" style=" height: 100px; width: auto;top:10vh; left: 20vw;">
+              <img class="speech" src="assets/2.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 50vw;">
+            </section>
+
+            <section class="slide two">
+              <audio id="f2" preload="auto">
+                <source src="assets/Frame2Audio.wav" type="audio/wav">
+              </audio>
+              <img src="assets/Frame2.png" onclick="document.getElementById('f2').play();"/>
+              <img class="speech" src="assets/3.gif" alt="speech bubble" style="height:100px; width: auto;top:5vh; left: 120vw;">
+            </section>
+
+            <section class="slide three">
+              <audio id="f3" preload="auto">
+                <source src="assets/Frame3Audio.wav" type="audio/wav">
+              </audio>
+              <img src="assets/Frame_3.png" onclick="document.getElementById('f3').play();"></img>
+              <img class="speech" src="assets/4.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 230vw;">
+            </section>
+
+            <section class="slide four">
+              <audio id="f4" preload="auto">
+                <source src="assets/Frame4Audio.wav" type="audio/wav">
+              </audio>
+              <img src="assets/Frame4.png" onclick="document.getElementById('f4').play();"></img>
+              <img class="speech" src="assets/5.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 330vw;">
+            </section>
+
+            <section class="slide five">
+              <audio id="f5" preload="auto">
+                <source src="assets/Frame5Audio.wav" type="audio/wav">
+              </audio>
+              <audio id="b2" preload="auto">
+                <source src="music_comic/glitch-sound-effect-12796.mp3" type="audio/mp3">
+              </audio>
+              <script>
+                var audio = document.getElementById("b2");
+                audio.volume = 0.2;
+              </script>
+              <img src="assets/Frame5.png" onclick="document.getElementById('f5').play(); document.getElementById('b2').play();"/>
+              <img class="speech" src="assets/6.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 450vw;">
+            </section>
+
+            <section class="slide six">
+              <audio id="f6" preload="auto">
+                <source src="assets/Frame6Audio.wav" type="audio/wav">
+              </audio>
+              <img src="assets/Frame6.png"onclick="document.getElementById('f6').play();"></img>
+              <img class="speech" src="assets/7.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 550vw;">
+            </section>
           </div>
         </div>
       </div>
