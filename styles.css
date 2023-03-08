@@ -106,7 +106,7 @@ body{
   transform-origin: top left;
   overflow-y: hidden;
   /* padding:10%; */
-  width: 600vw;
+  width: 800vw;
 }
 
 .slide{
@@ -167,6 +167,22 @@ body{
 }
 
 .six img{
+  padding-top:5%;
+  height:80%;
+  margin: auto;
+  display: block;
+  z-index: 0;
+}
+
+.seven video{
+  padding-top:5%;
+  height:80%;
+  margin: auto;
+  display: block;
+  z-index: 0;
+}
+
+.eight img{
   padding-top:5%;
   height:80%;
   margin: auto;
