@@ -1,32 +1,41 @@
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+/* import font library */
+@import "https://fonts.googleapis.com/css?family=Quicksand";
 
-
+/* define font */
 @font-face {
   font-family: "Minecraft";
   src: url("fonts/Minecraft.ttf");
-  }
-
-* {
-  /* outline: 1px solid red; */
 }
 
-body{
-  background-image: linear-gradient(to right, #241b21, #2e162b, #361037, #390a47, #390a47, #390a4798, #36055975), url('assets/poster.png') !important;
+/* body design */
+body {
+  background-image: linear-gradient(
+      to right,
+      #241b21,
+      #2e162b,
+      #361037,
+      #390a47,
+      #390a47,
+      #390a4798,
+      #36055975
+    ),
+    url("assets/poster.png") !important;
   background-size: auto 94vh;
   height: 100%;
-  margin:0;
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+  margin: 0;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
 }
 
-.mainContainer{
+/* landing page css design */
+.mainContainer {
   text-align: center;
   max-height: 100vh;
   cursor: pointer;
 }
 
-
-.title{
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+/* design to show the title animation "The USB curse" */
+.title {
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
   font-size: 128px;
   color: #fff;
   letter-spacing: 10px;
@@ -38,81 +47,89 @@ body{
   transform: translate(-50%, -50%);
   transition: transform 1s ease-in-out;
   animation: fade-in 2s ease-in-out forwards;
-
 }
-.subTitle2{
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+
+/* Design for title in frames*/
+.subTitle2 {
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
   opacity: 0.8;
   font-size: 12px;
-  color:#fff;
+  color: #fff;
   text-align: center;
-  margin:0;
+  margin: 0;
   left: 50%;
   margin-top: 2%;
-  -webkit-animation: bounce .4s ease infinite alternate;
+  -webkit-animation: bounce 0.4s ease infinite alternate;
 }
 
-.subTitle3{
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
-  align-items:center;
+/* backup design of the subtitles */
+.subTitle3 {
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  align-items: center;
   opacity: 0.8;
   font-size: 22px;
-  color:#fff;
+  color: #fff;
   text-align: center;
-  margin:0;
+  margin: 0;
   left: 50%;
-  margin-top:50vh;
+  margin-top: 50vh;
   /* -webkit-animation: bounce .4s ease infinite alternate; */
 }
 
-
-.subTitle{
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
-  margin-top:95vh;
+/* Design for "click to continue" animation */
+.subTitle {
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  margin-top: 95vh;
   opacity: 0.8;
   font-size: 12px;
-  color:#fff;
+  color: #fff;
   text-align: center;
   left: 50%;
-  -webkit-animation: bounce .4s ease infinite alternate;
+  -webkit-animation: bounce 0.4s ease infinite alternate;
 }
 
 @-webkit-keyframes bounce {
-  0% {}
+  0% {
+  }
   100% {
-    transform:translateY(-7px);
+    transform: translateY(-7px);
   }
 }
 
-::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar{
-	width: 10px;
-	background-color: #F5F5F5;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar-thumb{
-	background-color: #420c54;	
-	background-image: -webkit-linear-gradient(45deg,
-    rgba(255, 255, 255, .2) 25%,
+::-webkit-scrollbar-thumb {
+  background-color: #420c54;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
     transparent 25%,
     transparent 50%,
-    rgba(255, 255, 255, .2) 50%,
-    rgba(255, 255, 255, .2) 75%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
     transparent 75%,
-    transparent)
+    transparent
+  );
 }
 
-.slide {
-  width: 100vw;
-  height: 100vh;
-}
-
+/* design of background of the entirety of the comic */
 .page-content {
-  background: linear-gradient(to bottom, #241b21, #2e162b, #361037, #390a47, #360559) !important;
+  background: linear-gradient(
+    to bottom,
+    #241b21,
+    #2e162b,
+    #361037,
+    #390a47,
+    #360559
+  ) !important;
   width: 100vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
@@ -125,139 +142,144 @@ body{
   -ms-overflow-style: none;
 }
 
+/* containing slides */
 .slides {
   display: flex;
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   overflow-y: hidden;
-  /* padding:10%; */
   width: 700vw;
 }
 
-.slide{
-  width:100vw !important;
+/* each slide */
+.slide {
+  height: 100vh;
+  width: 100vw !important;
 }
 
-.one img{
-  padding-top:2%;
-  height:80%;
+/* Frame 1-8 */
+.one img {
+  padding-top: 2%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
-
-.speech{
+/* speech bubble */
+.speech {
   z-index: 1;
   position: absolute;
 }
 
-.two img{
-  padding-top:2%;
-  height:80%;
+.two img {
+  padding-top: 2%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-.three img{
-  padding-top:2%;
-  height:80%;
+.three img {
+  padding-top: 2%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-.four img{
-  padding-top:2%;
-  height:80%;
+.four img {
+  padding-top: 2%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-.fourtwo img{
-  padding-top:2%;
-  height:80%;
+.fourtwo img {
+  padding-top: 2%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-.five section{
+.five section {
   background-image: url("assets/Frame5.png");
-  padding-top:2%;
-  height:80%;
-  width:60%;
+  padding-top: 2%;
+  height: 80%;
+  width: 60%;
   background-size: 100% 100%;
   margin: auto;
   display: block;
   z-index: 0;
-  animation:animate .2s linear infinite;
+  animation: animate 0.2s linear infinite;
 }
 
-.six img{
-  /* padding-top:2%; */
-  height:70%;
+.six img {
+  height: 70%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-@keyframes animate{
-	0%{
-	background-position: 0 0;
-	filter:hue-rotate(0deg);
-	}
-	10%{
-	background-position: 5px 0;
-	}
-	20%{
-	background-position: -5px 0;
-	}
-	30%{
-	background-position: 15px 0;
-	}
-	40%{
-	background-position: 5px 0;
-	}
-	50%{
-	background-position: -25px 0;
-	}
-	60%{
-	background-position: -50px 0;
-	}
-	70%{
-	background-position: 0 -20px;
-	}
-	80%{
-	background-position: -60px -20px;
-	}
-	81%{
-	background-position: 0 0;
-	}
-	100%{
-	background-position: 0 0;
-	filter:hue-rotate(360deg);
-	}
+/* animation for the glitching on frame 5 */
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    background-position: 5px 0;
+  }
+  20% {
+    background-position: -5px 0;
+  }
+  30% {
+    background-position: 15px 0;
+  }
+  40% {
+    background-position: 5px 0;
+  }
+  50% {
+    background-position: -25px 0;
+  }
+  60% {
+    background-position: -50px 0;
+  }
+  70% {
+    background-position: 0 -20px;
+  }
+  80% {
+    background-position: -60px -20px;
+  }
+  81% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+    filter: hue-rotate(360deg);
+  }
 }
 
-.seven video{
-  padding-top:5%;
-  height:80%;
+.seven video {
+  padding-top: 5%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
-.eight img{
-  padding-top:5%;
-  height:80%;
+.eight img {
+  padding-top: 5%;
+  height: 80%;
   margin: auto;
   display: block;
   z-index: 0;
 }
 
+
+/* design for the sidebar */
 .abstract-sidebar {
   position: fixed;
   right: 0;
@@ -271,7 +293,7 @@ body{
 
 .abstract-sidebar a {
   line-height: 2.5em;
-  color: #FFFFFF;
+  color: #ffffff;
   position: fixed;
   transform-origin: bottom right;
   transform: rotate(270deg);
@@ -296,7 +318,7 @@ body{
   bottom: 0;
   right: 0;
   background: #420c54;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -306,7 +328,7 @@ body{
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .abstract-popup.open {
@@ -315,39 +337,40 @@ body{
   transition: transform 0.6s ease-in;
 }
 
-.abstract-popup-header{
-    width: 100%;
-    text-align: center;
-    padding: 2em;
+.abstract-popup-header {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
 }
 
-.close-abstract-popup{
-  color: #FFFFFF !important;
+.close-abstract-popup {
+  color: #ffffff !important;
   font-size: 3em;
   text-decoration: none !important;
 }
 
-.abstract-popup-body{
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF !important;
+.abstract-popup-body {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff !important;
 }
 
+/* design for button on the 6th frame */
 .btnContainer {
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
   text-align: center;
-  margin-top:10vh;
+  margin-top: 10vh;
 }
 
 .btnContainer btn {
   color: #ffffff;
   overflow: hidden;
-  background:  #d72503;
-  border-radius: 5px; 
+  background: #d72503;
+  border-radius: 5px;
   border-radius: 13px;
   transition: all 2s ease;
   opacity: 0.8;
@@ -366,8 +389,9 @@ btn {
   font-size: 20px;
 }
 
+/* desgin of animation on the last frame of words */
 .box {
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif !important;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,9 +403,10 @@ btn {
   position: relative;
   padding: 30px;
 }
-.box .glitch:before, .box .glitch:after {
-  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
-  content: 'You have been contaminated';
+.box .glitch:before,
+.box .glitch:after {
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  content: "You have been contaminated";
   color: #fff;
   position: absolute;
   top: 0;
@@ -401,130 +426,130 @@ btn {
 @keyframes glitch-before {
   0% {
     clip: rect(101px, 350px, 27px, 30px);
- }
+  }
   5% {
     clip: rect(101px, 350px, 8px, 30px);
- }
+  }
   10% {
     clip: rect(136px, 350px, 129px, 30px);
- }
+  }
   15% {
     clip: rect(112px, 350px, 30px, 30px);
- }
+  }
   20% {
     clip: rect(112px, 350px, 32px, 30px);
- }
+  }
   25% {
     clip: rect(76px, 350px, 133px, 30px);
- }
+  }
   30% {
     clip: rect(148px, 350px, 129px, 30px);
- }
+  }
   35% {
     clip: rect(25px, 350px, 40px, 30px);
- }
+  }
   40% {
     clip: rect(97px, 350px, 11px, 30px);
- }
+  }
   45% {
     clip: rect(82px, 350px, 148px, 30px);
- }
+  }
   50% {
     clip: rect(142px, 350px, 82px, 30px);
- }
+  }
   55% {
     clip: rect(76px, 350px, 97px, 30px);
- }
+  }
   60% {
     clip: rect(133px, 350px, 35px, 30px);
- }
+  }
   65% {
     clip: rect(150px, 350px, 65px, 30px);
- }
+  }
   70% {
     clip: rect(86px, 350px, 144px, 30px);
- }
+  }
   75% {
     clip: rect(51px, 350px, 70px, 30px);
- }
+  }
   80% {
     clip: rect(91px, 350px, 140px, 30px);
- }
+  }
   85% {
     clip: rect(135px, 350px, 54px, 30px);
- }
+  }
   90% {
     clip: rect(12px, 350px, 136px, 30px);
- }
+  }
   95% {
     clip: rect(41px, 350px, 85px, 30px);
- }
+  }
   100% {
     clip: rect(98px, 350px, 73px, 30px);
- }
+  }
 }
 @keyframes glitch-after {
   0% {
     clip: rect(74px, 350px, 57px, 30px);
- }
+  }
   5% {
     clip: rect(47px, 350px, 9px, 30px);
- }
+  }
   10% {
     clip: rect(133px, 350px, 69px, 30px);
- }
+  }
   15% {
     clip: rect(85px, 350px, 73px, 30px);
- }
+  }
   20% {
     clip: rect(38px, 350px, 83px, 30px);
- }
+  }
   25% {
     clip: rect(22px, 350px, 55px, 30px);
- }
+  }
   30% {
     clip: rect(131px, 350px, 90px, 30px);
- }
+  }
   35% {
     clip: rect(74px, 350px, 36px, 30px);
- }
+  }
   40% {
     clip: rect(43px, 350px, 125px, 30px);
- }
+  }
   45% {
     clip: rect(91px, 350px, 149px, 30px);
- }
+  }
   50% {
     clip: rect(94px, 350px, 6px, 30px);
- }
+  }
   55% {
     clip: rect(129px, 350px, 136px, 30px);
- }
+  }
   60% {
     clip: rect(100px, 350px, 91px, 30px);
- }
+  }
   65% {
     clip: rect(26px, 350px, 21px, 30px);
- }
+  }
   70% {
     clip: rect(77px, 350px, 148px, 30px);
- }
+  }
   75% {
     clip: rect(27px, 350px, 145px, 30px);
- }
+  }
   80% {
     clip: rect(91px, 350px, 83px, 30px);
- }
+  }
   85% {
     clip: rect(139px, 350px, 1px, 30px);
- }
+  }
   90% {
     clip: rect(56px, 350px, 146px, 30px);
- }
+  }
   95% {
     clip: rect(67px, 350px, 45px, 30px);
- }
+  }
   100% {
     clip: rect(77px, 350px, 135px, 30px);
- }
+  }
 }

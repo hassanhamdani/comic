@@ -5,10 +5,14 @@
 		<link rel="stylesheet" href="styles.css">
     </head>
   <body>
+
+    <!-- The landing page view -->
     <div class="mainContainer" id="mainContainer">
       <h3 class="title" id="title">The</h3>
       <h4 class="subTitle">Click anywhere to advance</h4>
     </div>
+
+    <!-- For abstract side bar in the comic -->
     <div id="main" style="display:none">
       <div class="page">
         <div class="abstract-sidebar" style="top:10px">
@@ -27,88 +31,119 @@
 
             </div>
         </div>
+
+        <!-- The entirety of comic body -->
         <div class="page-content">
           <div class="slides">
+
+            <!-- Frame 1 -->
             <section class="slide one">
               <h4 class ="subTitle2">Click the comic to play the sound </br> Scroll down to continue </br></br> View horizontally </h4>
+              <!-- import audio -->
               <audio id="f1" preload="auto">
                 <source src="assets/Frame1_Audio.wav" type="audio/wav">
               </audio>
               <audio id="b1" preload="auto">
               <source src="music_comic/trailermusic-7621.mp3" type="audio/mp3">
             </audio>
+            <!-- script for audio volume -->
             <script>
               var audio = document.getElementById("b1");
               audio.volume = 0.2;
             </script>
+            <!-- image of comic strip -->
               <img src="assets/Frame1.5.png"  onclick="document.getElementById('f1').play();document.getElementById('b1').play();"/>
+              <!-- adding speech bubble  -->
               <img class="speech" src="assets/1.gif" alt="speech bubble" style="height: 100px; width: auto;top:15vh; left: 42vw;">
               <img class="speech" src="assets/2.gif" alt="speech bubble" style="height:80px; width: auto;top:30vh; left: 50vw;">
             </section>
 
+            <!-- Frame 2 -->
             <section class="slide two">
               <h4 class ="subTitle2"></br></br></br></h4>
+              <!-- load audio -->
               <audio id="f2" preload="auto">
                 <source src="assets/Frame2Audio.wav" type="audio/wav">
               </audio>
+              <!-- comic strip image -->
               <img src="assets/Frame2.png" onclick="document.getElementById('f2').play();"/>
+              <!-- speech bubble -->
               <img class="speech" src="assets/3.gif" alt="speech bubble" style="height:100px; width: auto;top:7vh; left: 135vw;">
             </section>
 
+            <!-- Frame 3 -->
             <section class="slide three">
               <h4 class ="subTitle2"></br></br></br></h4>
+              <!-- load audio -->
               <audio id="f3" preload="auto">
                 <source src="assets/Frame3Audio.wav" type="audio/wav">
               </audio>
+              <!-- comic strip image -->
               <img src="assets/Frame_3.png" onclick="document.getElementById('f3').play();"></img>
+              <!-- speech bubble -->
               <img class="speech" src="assets/4.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 250vw;">
             </section>
 
+            <!-- Frame 4 -->
             <section class="slide four">
               <h4 class ="subTitle2"></br></br></br></h4>
+              <!-- load audio -->
               <audio id="f4" preload="auto">
                 <source src="assets/Frame4Audio.wav" type="audio/wav">
               </audio>
+              <!-- comic strip image -->
               <img src="assets/Frame4.png" onclick="document.getElementById('f4').play();"></img>
+              <!-- speech bubble -->
               <img class="speech" src="assets/5.gif" alt="speech bubble" style="height:80px; width: auto;top:5vh; left: 360vw;">
             </section>
 
+            <!-- Frame 5 -->
             <section class="slide five">
               <h4 class ="subTitle2"></br></br></br></h4>
+              <!-- load audio -->
               <audio id="f5" preload="auto">
                 <source src="assets/Frame5Audio.wav" type="audio/wav">
               </audio>
               <audio id="b2" preload="auto">
                 <source src="music_comic/glitch-sound-effect-12796.mp3" type="audio/mp3">
               </audio>
+              <!-- script for the audio -->
               <script>
                 var audio = document.getElementById("b2");
                 audio.volume = 0.2;
               </script>
+              <!-- onclick to paly audio on section -->
               <section onclick="document.getElementById('f5').play(); document.getElementById('b2').play();">
 
               </section>
-              <!-- <img src="assets/Frame5.png" onclick="document.getElementById('f5').play(); document.getElementById('b2').play();"/> -->
+              <!-- speech bubble -->
               <img class="speech" src="assets/6.gif" alt="speech bubble" style="height:80px; width: auto;top:30vh; left: 445vw;">
             </section>
 
+            <!-- Frame 6 -->
             <section class="slide six">
               <h4 class ="subTitle2"></br></br></br></h4>
+              <!-- load audio -->
               <audio id="f6" preload="auto">
                 <source src="assets/Frame6Audio.wav" type="audio/wav">
               </audio>
+              <!-- comic strip image -->
               <img src="assets/Frame6.png"onclick="document.getElementById('f6').play();"></img>
+              <!-- speech bubble -->
               <img class="speech" src="assets/7.gif" alt="speech bubble" style="height:80px; width: auto; top:13vh; left: 550vw;">
+              <!-- botton to show the skull -->
               <div class="btnContainer" id="btn">
                 <btn>Accept the USB?<a href="#video1"></a></btn>
               </div>
+              <!-- show video -->
               <video id="videoplay" width="800" height="auto" autoplay="autoplay" style="pointer-events:none;margin-top:6000px;">
                 <source src="assets/skull end.mp4" type="video/mp4">
               </video>
             </section>
+
+            <!-- Frame 7 -->
             <section class="slide seven">
-              <!-- <div class ="subTitle3">You have been contaminated!</br></br> Remember, pass it on...</br></br></div> -->
-              <!-- <h4 class ="subTitle3">You have been contaminated!</br></br> Remember, pass it on...</br></br></h4> -->
+              <!-- box class for the animation on "You have" -->
               <div id ="seven" class="box">
                 <h1 class="glitch">You have been contaminated!</br></br>Remember, pass it on...</h1>
              </div>
@@ -118,6 +153,8 @@
         </div>
       </div>
     </div>
+    
+    <!-- importing the scripts used in the comic page -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
